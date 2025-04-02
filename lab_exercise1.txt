@@ -1,0 +1,102 @@
+# Write python program which accept the radius of circle from the user and compute the area
+print("\nCalculate radius of Circle")
+import math
+rad = float(input("Enter radius of circle: "))
+area = math.pi * (rad**2) 
+print("Area of Circle: ", round(area, 3))
+
+
+
+
+# Temperature of a city in Fahrenheit degree is input through the keyboard. Write a program to convert this temperature into Centigrade degrees.
+print("\nConvert Fahrenheit degree to Degree Celcius")
+Fah = float(input("Enter temperature of a city in Fahrenheit degree: "))
+Cel = (Fah - 32) * 5 / 9
+print("Temperature of a city in degree Celcius: ", round(Cel, 3))
+
+
+
+
+# Write a Python Program to make a simple calculator that can add, subtract, multiply and divide
+print("\nAdd, Sub, Mul, Div")
+num1 = float(input("Enter num1: "))
+num2 = float(input("Enter num2: "))
+print("1:Add, 2:Subtract, 3:Multiply, 4:Divide")
+operator = int(input("Select operator: "))
+if(operator == 1):
+    val = num1 + num2
+    print(f"{num1} + {num2} = {val}")
+elif(operator == 2):
+    val = num1 - num2
+    print(f"{num1} - {num2} = {val}")
+elif(operator == 3):
+    val = num1 * num2
+    print(f"{num1} x {num2} = {val}")
+elif(operator == 4):
+    val = num1/num2
+    print(f"{num1} / {num2} = {val}")
+else:
+    print("cannot perform the task")
+
+
+
+# Write a Python Program to calculate the square root
+print("\nCalculate squareroot of number")
+import cmath
+num = float(input("Enter number to get square root: "))
+squareroot = cmath.sqrt(num)
+print(f"Square root of {num} is: ", squareroot)
+
+
+
+
+# Write a Python Program to Solve the quadratic equation ax**2 + bx + c = 0. Coefficients a, b, c are provided by the user [Hint: import complex math module - cmath]
+print("\nFor expression ax^2 + bx + c = 0")
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+c = float(input("Enter c: "))
+
+val = cmath.sqrt(b**2 - 4*a*c)
+
+x1 = (-b + val)/(2 * a)
+x2 = (-b - val)/(2 * a) 
+
+print("Value of x are: ", x1, " and ", x2)
+
+
+
+
+# Write a Python Program to find the area of triangle. Three sides of the trianble a, b, c are provided by the user
+print("\nCalculate area of triangle")
+a = float(input("Enter length of side 1: "))
+b = float(input("Enter length of side 2: "))
+c = float(input("Enter length of side 3: "))
+s = (a+b+c)/2
+area = cmath.sqrt(s * (s-a) * (s-b) * (s-c))
+print("Area of triangle: ", area)
+
+
+
+
+# Write a Python Program to print the following string in specific format.
+print("\nPoem")
+print('''Twinke, twinkle, little star,
+\tHow I wonder what you are!
+\t\tUp above the world so high
+\t\tLike a diamond in the sky.
+Twinke, twinkle, little star,
+\tHow I wonder what you are!''')
+
+
+
+# Write a Python Program to display your details like name, age, address in three different lines
+print("\nDetails")
+print("Name:Sagar\nAge:30\nAddress:Mumbai")
+
+
+
+# If a five-digit number is input through the keyboard, write a program to calculate the sum of its digits without using any loop [Hint: use the modulus operator '%']
+print("\nSum of digits in number")
+num = int(input("Enter five digit number: "))
+total = (num//10000)%10 + ((num//1000))%10 + ((num//100))%10 + ((num//10))%10 + num%10
+print("Total of sum of five digits: ", total)
